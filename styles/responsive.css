@@ -1,0 +1,56 @@
+@media only screen and (min-width:320px) and (max-width:1111px) {
+
+    .responsive-baner {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0 !important;
+        align-items: center;
+    }
+
+    .responsive-info-baner {
+        width: auto !important;
+        padding: 0 !important;
+
+    }
+
+    .text-movie,
+    .text-movie-h1,
+    .text-movie-p {
+        text-align: center !important;
+    }
+
+    .overview {
+        padding: 0 10% 0 10%;
+    }
+
+
+    .responsive-btn {
+        justify-content: space-evenly !important;
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0 10% 0 10%;
+    }
+
+    .responsive-text-select {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+
+    .footer-cols {
+        display: none !important;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+
+    .banner-size.responsive {
+        flex: 0 0 auto !important;
+        width: auto !important;
+    }
+
+    .responsive-text-select {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+}
