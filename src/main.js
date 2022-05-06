@@ -1,4 +1,4 @@
-/* declarando as variaveis */
+
 const popular = document.querySelector(".frames");
 const drama = document.querySelector(".Drama");
 const acao = document.querySelector(".acao");
@@ -121,7 +121,7 @@ const universalPoster = (data, consdata, namebtn) => {
 
 }
 
-const universalBanerSelect = (id, gadrade, close) =>{
+const universalBanerSelect = (id, grede, close) =>{
   Api(`/movie/${id + key()}`).then((resposta) =>
       selectmovie([resposta.data])
     );
@@ -131,7 +131,7 @@ const universalBanerSelect = (id, gadrade, close) =>{
         /* console.log(movie[0]) */
         movie.map((resp) => {
           console.log(movie);
-          gadrade.innerHTML = `
+          grede.innerHTML = `
           <div class="container-fd">
             <div class="row">
               <div class="col-12 bannermovie" style="background-image:url(${imgurl(
@@ -269,11 +269,11 @@ function moviespage1(data) {
    universalPoster(data, popular, "button-popular")
  
   $(".button-popular").click(function (event) {
-    $(".moviegadrade").addClass("show").removeClass("showoff");
-    const gadrade = document.querySelector(".moviegadrade ");
+    $(".moviegrede").addClass("show").removeClass("showoff");
+    const grede = document.querySelector(".moviegrede ");
     const el = event.target || event.srcElement;
     const id = el.id;
-    universalBanerSelect(id, gadrade,"moviegadrade")
+    universalBanerSelect(id, grede,"moviegrede")
   });
 }
 
