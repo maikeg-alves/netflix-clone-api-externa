@@ -16,7 +16,7 @@ Nesse desafio foi proposto fazer o clone da pagina inicial da Netflix e também 
 
 [Video de demostração](https://youtu.be/80oMOMwiXds)
 
-[Demo Projeto rodando no Netlify] (https://62c1b6f0a2d42722f0d7e224--soft-cucurucho-3d3e1c.netlify.app/)
+[Demo Projeto rodando no Netlify](https://62c1b6f0a2d42722f0d7e224--soft-cucurucho-3d3e1c.netlify.app/)
 
 ## Aprendizados
 
