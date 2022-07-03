@@ -91,6 +91,7 @@ const universalPlayer = (id) => {
   }
 };
 
+
 const universalPoster = (data, consdata, namebtn) => {
 
   for (let movies of [data]) {
@@ -126,9 +127,10 @@ const universalBanerSelect = (id, grede, close) =>{
       selectmovie([resposta.data])
     );
 
-    function selectmovie(data) {
+//banner de acordo com o gênero selecionado 
+
+ function selectmovie(data) {
       for (let movie of [data]) {
-        /* console.log(movie[0]) */
         movie.map((resp) => {
           console.log(movie);
           grede.innerHTML = `
@@ -146,8 +148,8 @@ const universalBanerSelect = (id, grede, close) =>{
                           <div class="banner-size-responsive col-12">
                               <h1>${resp.title}</h1>
                               <p>Nota: ${resp.vote_average} > ${resp.genres.map(
-            (gen) => gen.name
-          )} > ${resp.release_date}
+                              (gen) => gen.name
+                                )} > ${resp.release_date}
                               </p>
                               <div class="responsive-text-select">
                                   <p class="fs-6 text-break characterlimit">${text(
@@ -162,7 +164,7 @@ const universalBanerSelect = (id, grede, close) =>{
                                <span class="material-symbols-outlined up">thumb_up</span>
                             </button>
                            <button type="button" class="btn btn_down">
-                             <span class="material-symbols-outlined down">thumb_downs</span>
+                             <span class="material-symbols-outlined down">thumb_down</span>
                            </button>
                             </div>
                           </div>
@@ -185,6 +187,7 @@ const universalBanerSelect = (id, grede, close) =>{
     }
 }
 
+//player de videos do youtube
 function onPlayerReady(event) {
   event.target.playVideo();
 }
@@ -226,8 +229,8 @@ const RandomBaner = (data) => {
                           <p class="text-movie-p">Nota: ${
                             resp.vote_average
                           } > ${resp.genres.map((gen) => gen.name)} > ${
-          resp.release_date
-        }</p>
+                             resp.release_date
+                           }</p>
                       </div>
                     </div>
 
@@ -243,7 +246,7 @@ const RandomBaner = (data) => {
                             <span class="material-symbols-outlined up">thumb_up</span>
                         </button>
                         <button type="button" class="btn btn_down">
-                            <span class="material-symbols-outlined down">thumb_downs</span>
+                            <span class="material-symbols-outlined down">thumb_down</span>
                         </button>
                     </div>
                 </div>
@@ -269,11 +272,11 @@ function moviespage1(data) {
    universalPoster(data, popular, "button-popular")
  
   $(".button-popular").click(function (event) {
-    $(".moviegrede").addClass("show").removeClass("showoff");
-    const grede = document.querySelector(".moviegrede ");
+    $(".moviegadrade").addClass("show").removeClass("showoff");
+    const grede = document.querySelector(".moviegadrade ");
     const el = event.target || event.srcElement;
     const id = el.id;
-    universalBanerSelect(id, grede,"moviegrede")
+    universalBanerSelect(id, grede,"moviegadrade")
   });
 }
 
