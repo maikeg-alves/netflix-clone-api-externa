@@ -1,11 +1,6 @@
 
 # Clonando a interface da Netflix 
 
-## Desafio 1 do Modúlo 2, HTML, CSS e JS  
-
-Nesse desafio foi proposto fazer o clone da pagina inicial da Netflix e também fazer algo com o seu toque, eu como sou uma pessoa que gosta de desafios, coloquei um degrau a mais de dificuldade, usei uma Api externa para trazer os filmes e suas informações necearias para construir esse layout.
-
-
 ## Referência
 
  - [Documentação da api do TMDB](https://www.themoviedb.org/settings/api)
